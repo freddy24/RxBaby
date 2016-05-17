@@ -12,16 +12,18 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Description:
  * Created by freddy on 16/5/16.
  */
-public class HttpMethod {
+public class BabyRetrofit {
     private static final int DEFAULT_TIMEOUT = 5;
     private static final String BASE_URL = "http://120.25.122.213:3703/BCC/";
 
     private Retrofit retrofit;
 
-    private HttpMethod(){
+    private static final boolean isDebug = true;
+
+    public BabyRetrofit(){
         OkHttpClient.Builder builder = new OkHttpClient.Builder();
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
-        interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        interceptor.setLevel(level(isDebug));
         builder.addInterceptor(interceptor);
         builder.connectTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
 
@@ -32,15 +34,14 @@ public class HttpMethod {
                 .baseUrl(BASE_URL)
                 .build();
 
+
     }
 
-    private static HttpMethod getInstance(){
-        return SingleHolder.httpMethod;
+    public BaseAPI getApi(BaseAPI api){
+        return retrofit.create(api.getClass());
     }
 
-    private static class SingleHolder{
-        private static final HttpMethod httpMethod = new HttpMethod();
+    private HttpLoggingInterceptor.Level level(boolean isDebug){
+        return isDebug ? HttpLoggingInterceptor.Level.BODY : HttpLoggingInterceptor.Level.NONE;
     }
-
-
 }
