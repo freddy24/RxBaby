@@ -5,11 +5,13 @@
 
 package com.freddy.babylib.http.entry;
 
+import java.io.Serializable;
+
 /**
  * Description:
  * Created by freddy on 16/5/17.
  */
-public class BabyResponseHeader {
+public class BabyResponseHeader implements Serializable{
 
     /**
      * conversationId : ""

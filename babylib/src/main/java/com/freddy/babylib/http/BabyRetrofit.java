@@ -37,8 +37,12 @@ public class BabyRetrofit {
 
     }
 
-    public BaseAPI getApi(BaseAPI api){
-        return retrofit.create(api.getClass());
+    public Retrofit getRetrofit() {
+        return retrofit;
+    }
+
+    public BaseAPI getApi(Class<? extends BaseAPI> api){
+        return retrofit.create(api);
     }
 
     private HttpLoggingInterceptor.Level level(boolean isDebug){

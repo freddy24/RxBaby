@@ -30,7 +30,7 @@ public class BabyRequestHeader {
     private String cid;
     private String companyID;
     private String deviceId;
-    private String deviceOs;
+    private String deviceOs = "ANDROID";
     private String deviceOsVersion;
     private String interfaceVersion;
     private String productId;
