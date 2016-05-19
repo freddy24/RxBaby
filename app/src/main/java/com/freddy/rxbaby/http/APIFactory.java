@@ -9,12 +9,12 @@ import com.freddy.babylib.http.BabyRetrofit;
 public class APIFactory {
     private static final Object data = new Object();
 
-    static PAPI papiSingleInstance = null;
+    static PAPI papiSingleInstance;
 
     public static PAPI getPapiSingleInstance(){
         synchronized (data){
             if (null == papiSingleInstance){
-                papiSingleInstance = (PAPI) new BabyRetrofit().getApi(papiSingleInstance);
+                papiSingleInstance = new BabyRetrofit().getRetrofit().create(PAPI.class);
             }
             return papiSingleInstance;
         }

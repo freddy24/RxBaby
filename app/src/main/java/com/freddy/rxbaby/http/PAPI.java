@@ -5,7 +5,6 @@
 
 package com.freddy.rxbaby.http;
 
-import com.freddy.babylib.http.BaseAPI;
 import com.freddy.babylib.http.entry.BRequest;
 import com.freddy.babylib.http.entry.BResponse;
 
@@ -17,8 +16,8 @@ import rx.Observable;
  * Description:
  * Created by freddy on 16/5/17.
  */
-public interface PAPI extends BaseAPI{
+public interface PAPI{
 
-    @POST("USDeviceInfoUpdate")
-    Observable<BResponse> requestUSDeviceInfoUpdate(@Body BRequest request);
+    @POST("BSPayQueryHisAddList")
+    Observable<BResponse> requestBSPayQueryHisAddList(@Body BRequest request);
 }
