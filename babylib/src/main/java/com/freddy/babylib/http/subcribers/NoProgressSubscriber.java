@@ -8,7 +8,7 @@ package com.freddy.babylib.http.subcribers;
  * Description: no progress subscriber
  * Created by freddy on 16/5/18.
  */
-public class NoProgressSubscriber<BResponse> extends BaseSubscriber<BResponse> {
+public class NoProgressSubscriber<T> extends BaseSubscriber<T> {
 
     private SubscriberOnNextListener onNextListener;
 
@@ -16,9 +16,14 @@ public class NoProgressSubscriber<BResponse> extends BaseSubscriber<BResponse> {
         this.onNextListener = onNextListener;
     }
 
+    @Override
+    public void onCompleted() {
+
+    }
+
     @SuppressWarnings("unchecked")
     @Override
-    public void onNext(BResponse t) {
+    public void onNext(T t) {
         if (onNextListener != null){
             onNextListener.onNext(t);
         }

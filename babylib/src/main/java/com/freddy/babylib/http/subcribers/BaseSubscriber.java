@@ -15,13 +15,7 @@ import rx.Subscriber;
  * Description:
  * Created by freddy on 16/5/18.
  */
-public class BaseSubscriber<BResponse> extends Subscriber<BResponse> {
-
-
-    @Override
-    public void onCompleted() {
-
-    }
+public abstract class BaseSubscriber<T> extends Subscriber<T> {
 
     @Override
     public void onError(Throwable e) {
@@ -33,10 +27,5 @@ public class BaseSubscriber<BResponse> extends Subscriber<BResponse> {
 
         }
         Log.i("onError", e.getMessage());
-    }
-
-    @Override
-    public void onNext(BResponse t) {
-        Log.i("BaseSubscriber", "onNext");
     }
 }

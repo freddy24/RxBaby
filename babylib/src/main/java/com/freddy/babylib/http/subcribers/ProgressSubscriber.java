@@ -13,7 +13,7 @@ import com.freddy.babylib.http.progress.ProgressDialogHandler;
  * Description: with progress http subscriber
  * Created by freddy on 16/5/18.
  */
-public class ProgressSubscriber<BResponse> extends BaseSubscriber<BResponse> implements ProgressCancelListener{
+public class ProgressSubscriber<T> extends BaseSubscriber<T> implements ProgressCancelListener{
 
     private Context context;
     private ProgressDialogHandler progressDialogHandler;
@@ -59,7 +59,7 @@ public class ProgressSubscriber<BResponse> extends BaseSubscriber<BResponse> imp
 
     @SuppressWarnings("unchecked")
     @Override
-    public void onNext(BResponse t) {
+    public void onNext(T t) {
         if (onNextListener != null){
             onNextListener.onNext(t);
         }

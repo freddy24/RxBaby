@@ -5,6 +5,8 @@
 
 package com.freddy.babylib.http.entry;
 
+import android.os.Build;
+
 /**
  * Description:
  * Created by freddy on 16/5/17.
@@ -31,7 +33,7 @@ public class BabyRequestHeader {
     private String companyID;
     private String deviceId;
     private String deviceOs = "ANDROID";
-    private String deviceOsVersion;
+    private String deviceOsVersion = Build.VERSION.RELEASE;
     private String interfaceVersion;
     private String productId;
     private String serviceCode;

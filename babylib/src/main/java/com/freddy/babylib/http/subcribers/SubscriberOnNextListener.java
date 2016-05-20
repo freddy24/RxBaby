@@ -8,7 +8,7 @@ package com.freddy.babylib.http.subcribers;
  * Description:
  * Created by freddy on 16/5/18.
  */
-public interface SubscriberOnNextListener<BResponse> {
+public interface SubscriberOnNextListener<T> {
 
-    void onNext(BResponse t);
+    void onNext(T t);
 }
