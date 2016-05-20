@@ -7,27 +7,30 @@ import android.widget.Button;
 
 import com.freddy.babylib.http.entry.BResponse;
 import com.freddy.babylib.http.subcribers.NoProgressSubscriber;
+import com.freddy.babylib.http.subcribers.ProgressSubscriber;
 import com.freddy.babylib.http.subcribers.SubscriberOnNextListener;
 import com.freddy.rxbaby.http.HttpMethod;
 
 public class MainActivity extends AppCompatActivity {
 
+    private SubscriberOnNextListener<BResponse> subscriberOnNextListener;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn1 = (Button) this.findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HttpMethod.requestBSPayQueryHisAddList(new NoProgressSubscriber<BResponse>(new SubscriberOnNextListener() {
-                    @Override
-                    public void onNext(Object o) {
-
-                    }
-                }));
+                HttpMethod.requestBSPayQueryHisAddList(new ProgressSubscriber<BResponse>(MainActivity.this, subscriberOnNextListener));
             }
         });
 
+        subscriberOnNextListener = new SubscriberOnNextListener<BResponse>() {
+            @Override
+            public void onNext(BResponse bResponse) {
+                bResponse.getResponse().getResponseHeader().toString();
+            }
+        };
     }
 }

@@ -7,6 +7,7 @@ package com.freddy.rxbaby.http;
 
 import com.freddy.babylib.http.entry.BRequest;
 import com.freddy.babylib.http.entry.BResponse;
+import com.freddy.babylib.http.entry.BabyResponse;
 
 import retrofit2.http.Body;
 import retrofit2.http.POST;
