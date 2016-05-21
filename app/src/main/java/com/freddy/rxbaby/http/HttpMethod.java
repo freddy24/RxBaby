@@ -30,6 +30,7 @@ public class HttpMethod {
 
     public static void requestBSPayQueryHisAddList(BaseSubscriber<BResponse> subscriber){
         final BRequest bRequest = SimpleRequestFactory.createBRequest(new HashMap<String, Object>());
+        bRequest.getRequest().getRequestHeader().setServiceCode("BSPayQueryHisAddList");
         Observable<BResponse> observable = APIFactory.getPapiSingleInstance().requestBSPayQueryHisAddList(bRequest)
                 .filter(new HttpResponseFunc1());
         toSubscribe(observable, subscriber);
