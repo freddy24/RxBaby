@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<resources>
+    <attr name="icon_width" format="dimension"/>
+    <attr name="icon_height" format="dimension"/>
+    <declare-styleable name="TabView">
+        <attr name="icon_width"/>
+        <attr name="icon_height"/>
+    </declare-styleable>
+</resources>
