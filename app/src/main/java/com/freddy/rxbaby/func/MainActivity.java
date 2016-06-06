@@ -11,8 +11,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.freddy.babylib.utils.ActivityUtils;
+import com.freddy.babylib.widget.TabView;
 import com.freddy.rxbaby.R;
 import com.freddy.rxbaby.func.main.MainFragment;
+import com.freddy.rxbaby.func.main.MainPresenter;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -25,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             mainFragment = MainFragment.newInstance();
             ActivityUtils.addFragmentToActivity(getSupportFragmentManager(),mainFragment,R.id.fl_content);
         }
+
+        MainPresenter presenter = new MainPresenter(mainFragment);
     }
 
 }

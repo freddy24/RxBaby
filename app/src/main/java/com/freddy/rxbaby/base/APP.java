@@ -8,7 +8,7 @@ import android.app.Application;
 import android.content.Context;
 
 /**
- * Description:
+ * Description://TODO
  * Created by freddy on 16/5/19.
  */
 public class APP extends Application {

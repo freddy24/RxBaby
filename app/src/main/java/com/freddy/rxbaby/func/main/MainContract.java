@@ -8,7 +8,7 @@ import com.freddy.rxbaby.base.BasePrestener;
 import com.freddy.rxbaby.base.BaseView;
 
 /**
- * Description:
+ * Description://TODO
  * Created by freddy on 16/6/2.
  */
 public class MainContract {
@@ -18,6 +18,16 @@ public class MainContract {
     }
 
     interface Presenter extends BasePrestener{
+        /**
+         * init icon data
+         * @return icon array
+         */
+        int[] initMenuIcon();
 
+        /**
+         * init menu text
+         * @return text array
+         */
+        String[] initMenuText();
     }
 }

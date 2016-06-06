@@ -3,7 +3,7 @@ package com.freddy.rxbaby.http;
 import com.freddy.babylib.http.BabyRetrofit;
 
 /**
- * Description:
+ * Description: create api interface
  * Created by freddy on 16/5/17.
  */
 public class APIFactory {

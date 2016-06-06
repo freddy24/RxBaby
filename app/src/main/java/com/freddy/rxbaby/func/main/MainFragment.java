@@ -11,13 +11,13 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import com.freddy.babylib.widget.TabView;
 import com.freddy.rxbaby.R;
 import com.freddy.rxbaby.func.menu1.MenuOneFragment;
 import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
@@ -44,7 +44,8 @@ public class MainFragment extends Fragment implements MainContract.View {
     private MainContract.Presenter mPresenter;
 
     private List<Fragment> fragments;
-    private List<String> titles;
+
+
 
     public MainFragment() {
 
@@ -67,11 +68,6 @@ public class MainFragment extends Fragment implements MainContract.View {
         fragments.add(MenuTwoFragment.newInstance());
         fragments.add(MenuOneFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
-        titles = new ArrayList<>();
-        titles.add("主页");
-        titles.add("活动");
-        titles.add("消息");
-        titles.add("我");
     }
 
     @Nullable
@@ -80,26 +76,31 @@ public class MainFragment extends Fragment implements MainContract.View {
         View view = inflater.inflate(R.layout.main_frag, container, false);
         ButterKnife.bind(this, view);
 
-//        tlTabs.addTab(tlTabs.newTab().setIcon(R.mipmap.ic_launcher).setText(titles.get(0)), 0, true);
-//        tlTabs.addTab(tlTabs.newTab().setIcon(R.mipmap.ic_launcher).setText(titles.get(1)), 1, false);
-//        tlTabs.addTab(tlTabs.newTab().setIcon(R.mipmap.ic_launcher).setText(titles.get(2)), 2, false);
-//        tlTabs.addTab(tlTabs.newTab().setIcon(R.mipmap.ic_launcher).setText(titles.get(3)), 3, false);
-
         MainPagerAdapter adapter = new MainPagerAdapter(getActivity().getSupportFragmentManager(),fragments);
         viewPager.setAdapter(adapter);
         tlTabs.setupWithViewPager(viewPager);
-        tlTabs.getTabAt(0).setCustomView(getTabView(0));
-        tlTabs.getTabAt(1).setCustomView(getTabView(1));
-        tlTabs.getTabAt(2).setCustomView(getTabView(2));
-        tlTabs.getTabAt(3).setCustomView(getTabView(3));
+        TabLayout.Tab tab0 = tlTabs.getTabAt(0);
+        TabLayout.Tab tab1 = tlTabs.getTabAt(1);
+        TabLayout.Tab tab2 = tlTabs.getTabAt(2);
+        TabLayout.Tab tab3 = tlTabs.getTabAt(3);
+        checkNotNull(tab0);
+        checkNotNull(tab1);
+        checkNotNull(tab2);
+        checkNotNull(tab3);
+        tab0.setCustomView(getTabView(0));
+        tab1.setCustomView(getTabView(1));
+        tab2.setCustomView(getTabView(2));
+        tab3.setCustomView(getTabView(3));
         return view;
     }
 
     private View getTabView(int position){
-        TabView tabView = new TabView(getActivity());
-        tabView.setText(titles.get(position));
-        tabView.setIcon(R.mipmap.ic_launcher);
-        return tabView;
+        View view = LayoutInflater.from(getActivity()).inflate(R.layout.menu_item_layout, tlTabs, false);
+        ImageView imageView = (ImageView) view.findViewById(R.id.iv_icon);
+        TextView textView = (TextView) view.findViewById(R.id.tv_text);
+        imageView.setImageResource(mPresenter.initMenuIcon()[position]);
+        textView.setText(mPresenter.initMenuText()[position]);
+        return view;
     }
 
     @Override
@@ -108,7 +109,7 @@ public class MainFragment extends Fragment implements MainContract.View {
         ButterKnife.unbind(this);
     }
 
-    class MainPagerAdapter extends FragmentPagerAdapter{
+    public static class MainPagerAdapter extends FragmentPagerAdapter{
 
         private List<Fragment> fragments;
 
@@ -130,11 +131,5 @@ public class MainFragment extends Fragment implements MainContract.View {
             }
             return -1;
         }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return titles.get(position);
-        }
-
     }
 }

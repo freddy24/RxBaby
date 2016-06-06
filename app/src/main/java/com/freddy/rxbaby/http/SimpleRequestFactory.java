@@ -7,7 +7,7 @@ import com.freddy.babylib.http.entry.BabyRequestHeader;
 import java.util.Map;
 
 /**
- * Description:
+ * Description: build bRequest
  * Created by freddy on 16/5/18.
  */
 public class SimpleRequestFactory {
