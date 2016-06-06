@@ -52,4 +52,14 @@ public class TabView extends TextView {
         }
     }
 
+    public void setIconDimension(int iconWidth, int iconHeight){
+        if (iconWidth < 0){
+            iconWidth = 0;
+        }
+        if (iconHeight < 0){
+            iconHeight = 0;
+        }
+        this.iconWidth = iconWidth;
+        this.iconHeight = iconHeight;
+    }
 }
