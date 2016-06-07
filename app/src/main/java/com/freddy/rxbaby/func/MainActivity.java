@@ -11,7 +11,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.freddy.babylib.utils.ActivityUtils;
-import com.freddy.babylib.widget.TabView;
 import com.freddy.rxbaby.R;
 import com.freddy.rxbaby.func.main.MainFragment;
 import com.freddy.rxbaby.func.main.MainPresenter;

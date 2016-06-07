@@ -4,12 +4,28 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.freddy.babylib.widget.autoscrollvp.AutoScrollViewPager
-        android:id="@+id/auto_view_pager"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp">
+
+        <com.freddy.babylib.widget.autoscrollvp.AutoScrollViewPager
+            android:id="@+id/auto_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <com.freddy.babylib.widget.pageindicator.CirclePageIndicator
+            android:id="@+id/circle_page_indicator"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            app:pageColor="@android:color/holo_blue_bright" />
+    </RelativeLayout>
+
 
 </LinearLayout>

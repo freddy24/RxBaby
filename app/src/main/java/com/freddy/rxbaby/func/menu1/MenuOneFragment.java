@@ -13,10 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 import com.freddy.babylib.widget.autoscrollvp.AutoScrollViewPager;
 import com.freddy.babylib.widget.autoscrollvp.RecyclingPagerAdapter;
+import com.freddy.babylib.widget.pageindicator.CirclePageIndicator;
 import com.freddy.rxbaby.R;
 
 import java.util.List;
@@ -37,6 +37,9 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
     @Bind(R.id.auto_view_pager)
     AutoScrollViewPager autoViewPager;
 
+    @Bind(R.id.circle_page_indicator)
+    CirclePageIndicator circlePageIndicator;
+
     private AutoScrollViewPagerAdapter adapter;
     public MenuOneFragment() {
 
@@ -51,7 +54,7 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         super.onCreate(savedInstanceState);
         mPresenter = new MenuOnePresenter(this);
         adapter = new AutoScrollViewPagerAdapter(getActivity(),mPresenter.getImageIds());
-        adapter.setInfiniteLoop(true);
+        adapter.setInfiniteLoop(false);
     }
 
     @Nullable
@@ -63,9 +66,11 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         autoViewPager.setAdapter(adapter);
         autoViewPager.setCycle(true);
         autoViewPager.setInterval(2000);
+        autoViewPager.setAutoScrollDurationFactor(0.8);
         autoViewPager.startAutoScroll();
         autoViewPager.setCurrentItem(Integer.MAX_VALUE/2 - Integer.MAX_VALUE/2 % mPresenter.getImageIds().size());
 
+        circlePageIndicator.setViewPager(autoViewPager);
         return view;
     }
 
@@ -104,7 +109,8 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         }
 
         private int getPosition(int position){
-            return isInfiniteLoop ? position % imageIds.size() : position;
+            return position % imageIds.size();
+//            return isInfiniteLoop ? position % imageIds.size() : position;
         }
 
         @Override
@@ -114,8 +120,7 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
                 viewHolder = new ViewHolder();
                 convertView = new ImageView(context);
                 viewHolder.imageView = (ImageView) convertView;
-                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
-                viewHolder.imageView.setLayoutParams(lp);
+                viewHolder.imageView.setScaleType(ImageView.ScaleType.FIT_XY);
                 convertView.setTag(viewHolder);
             }else {
                 viewHolder = (ViewHolder) convertView.getTag();
