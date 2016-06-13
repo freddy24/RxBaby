@@ -54,7 +54,6 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         super.onCreate(savedInstanceState);
         mPresenter = new MenuOnePresenter(this);
         adapter = new AutoScrollViewPagerAdapter(getActivity(),mPresenter.getImageIds());
-        adapter.setInfiniteLoop(false);
     }
 
     @Nullable
@@ -106,6 +105,7 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         public AutoScrollViewPagerAdapter(Context context, @NonNull List<Integer> imageIds){
             this.context = context;
             this.imageIds = imageIds;
+            isInfiniteLoop = false;
         }
 
         private int getPosition(int position){
