@@ -196,10 +196,10 @@ public class CirclePageIndicator extends View implements PageIndicator {
             return;
         }
 
-//        if (mCurrentPage >= count) {
-//            setCurrentItem(count - 1);
-//            return;
-//        }
+        if (mCurrentPage >= count) {
+            setCurrentItem(count - 1);
+            return;
+        }
 
         int longSize;
         int longPaddingBefore;
@@ -399,14 +399,9 @@ public class CirclePageIndicator extends View implements PageIndicator {
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-        if (position != mCurrentPage){
-            mCurrentPage = position;
-            mPageOffset = 0;
-            invalidate();
-        }
-//        mCurrentPage = position;
-//        mPageOffset = positionOffset;
-//        invalidate();
+        mCurrentPage = position;
+        mPageOffset = positionOffset;
+        invalidate();
         if (mListener != null) {
             mListener.onPageScrolled(position, positionOffset, positionOffsetPixels);
         }

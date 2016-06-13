@@ -364,18 +364,5 @@ public class AutoScrollViewPager extends ViewPager {
     public void setBorderAnimation(boolean isBorderAnimation) {
         this.isBorderAnimation = isBorderAnimation;
     }
-
-    private PagerAdapter adapter;
-
-    @Override
-    public void setAdapter(PagerAdapter adapter) {
-        this.adapter = adapter;
-        super.setAdapter(new AutoScrollViewPageAdapterDecorator((RecyclingPagerAdapter) adapter));
-    }
-
-    @Override
-    public PagerAdapter getAdapter() {
-            return adapter;
-    }
 }
 
