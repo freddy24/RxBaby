@@ -399,14 +399,14 @@ public class CirclePageIndicator extends View implements PageIndicator {
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-//        if (position != mCurrentPage){
-//            mCurrentPage = position;
-//            mPageOffset = 0;
-//            invalidate();
-//        }
-        mCurrentPage = position;
-        mPageOffset = positionOffset;
-        invalidate();
+        if (position != mCurrentPage){
+            mCurrentPage = position;
+            mPageOffset = 0;
+            invalidate();
+        }
+//        mCurrentPage = position;
+//        mPageOffset = positionOffset;
+//        invalidate();
         if (mListener != null) {
             mListener.onPageScrolled(position, positionOffset, positionOffsetPixels);
         }
