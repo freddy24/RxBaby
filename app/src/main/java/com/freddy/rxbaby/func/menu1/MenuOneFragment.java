@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,7 +42,11 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
     @Bind(R.id.circle_page_indicator)
     CirclePageIndicator circlePageIndicator;
 
+    @Bind(R.id.main_cycle_view)
+    RecyclerView recyclerView;
+
     private AutoScrollViewPagerAdapter adapter;
+    private MainRecyclerViewAdapter recyclerViewAdapter;
     public MenuOneFragment() {
 
     }
@@ -54,6 +60,7 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         super.onCreate(savedInstanceState);
         mPresenter = new MenuOnePresenter(this);
         adapter = new AutoScrollViewPagerAdapter(getActivity(),mPresenter.getImageIds());
+        recyclerViewAdapter = new MainRecyclerViewAdapter(getActivity());
     }
 
     @Nullable
@@ -68,8 +75,12 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         autoViewPager.setAutoScrollDurationFactor(0.8);
         autoViewPager.startAutoScroll();
         autoViewPager.setCurrentItem(Integer.MAX_VALUE/2 - Integer.MAX_VALUE/2 % mPresenter.getImageIds().size());
-
         circlePageIndicator.setViewPager(autoViewPager);
+
+        GridLayoutManager layoutManager = new GridLayoutManager(getActivity(),4);
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(recyclerViewAdapter);
+        recyclerView.addItemDecoration(new DividerGridItemDecorator(getActivity()));
         return view;
     }
 
@@ -109,8 +120,7 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         }
 
         private int getPosition(int position){
-            return position % imageIds.size();
-//            return isInfiniteLoop ? position % imageIds.size() : position;
+            return isInfiniteLoop ? position % imageIds.size() : position;
         }
 
         @Override

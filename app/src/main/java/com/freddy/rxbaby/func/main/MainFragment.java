@@ -87,6 +87,7 @@ public class MainFragment extends Fragment implements MainContract.View {
         checkNotNull(tab1);
         checkNotNull(tab2);
         checkNotNull(tab3);
+        tab0.select();
         tab0.setCustomView(getTabView(0));
         tab1.setCustomView(getTabView(1));
         tab2.setCustomView(getTabView(2));

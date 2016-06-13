@@ -24,8 +24,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
-            />
+            app:pageColor="@android:color/holo_blue_bright"/>
     </RelativeLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/main_cycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
