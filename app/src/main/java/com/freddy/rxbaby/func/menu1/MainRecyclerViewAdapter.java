@@ -14,9 +14,6 @@ import android.widget.TextView;
 
 import com.freddy.rxbaby.R;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-
 /**
  * Description:
  * Created by freddy on 16/6/13.

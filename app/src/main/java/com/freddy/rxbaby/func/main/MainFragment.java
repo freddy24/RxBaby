@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.freddy.rxbaby.R;
+import com.freddy.rxbaby.func.MainActivity;
 import com.freddy.rxbaby.func.menu1.MenuOneFragment;
 import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
 
@@ -68,6 +69,8 @@ public class MainFragment extends Fragment implements MainContract.View {
         fragments.add(MenuTwoFragment.newInstance());
         fragments.add(MenuOneFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
+
+        ((MainActivity)getActivity()).getSupportActionBar();
     }
 
     @Nullable
@@ -87,11 +90,11 @@ public class MainFragment extends Fragment implements MainContract.View {
         checkNotNull(tab1);
         checkNotNull(tab2);
         checkNotNull(tab3);
-        tab0.select();
         tab0.setCustomView(getTabView(0));
         tab1.setCustomView(getTabView(1));
         tab2.setCustomView(getTabView(2));
         tab3.setCustomView(getTabView(3));
+        tab0.select();
         return view;
     }
 

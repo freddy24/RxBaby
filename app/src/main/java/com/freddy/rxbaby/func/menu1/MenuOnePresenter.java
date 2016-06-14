@@ -14,7 +14,7 @@ import java.util.List;
  * Description:
  * Created by freddy on 16/6/6.
  */
-public class MenuOnePresenter implements Presenter{
+public class MenuOnePresenter implements MenuOneContract.Presenter{
 
     private MenuOneFragment view;
 

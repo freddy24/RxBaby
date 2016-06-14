@@ -29,7 +29,7 @@ import butterknife.ButterKnife;
 import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
- * Description: menu one //TODO
+ * Description: menu one //TODO viewpager的循环轮播配合pageIndicator目前还有问题，没有修改好，记得fix
  * Created by freddy on 16/6/2.
  */
 public class MenuOneFragment extends Fragment implements MenuOneContract.View {
