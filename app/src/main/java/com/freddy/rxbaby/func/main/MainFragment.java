@@ -46,8 +46,6 @@ public class MainFragment extends Fragment implements MainContract.View {
 
     private List<Fragment> fragments;
 
-
-
     public MainFragment() {
 
     }

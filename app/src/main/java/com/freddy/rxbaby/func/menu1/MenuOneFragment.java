@@ -11,6 +11,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,9 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
     @Bind(R.id.main_cycle_view)
     RecyclerView recyclerView;
 
+    @Bind(R.id.tool_bar)
+    Toolbar toolbar;
+
     private AutoScrollViewPagerAdapter adapter;
     private MainRecyclerViewAdapter recyclerViewAdapter;
     public MenuOneFragment() {
@@ -68,6 +72,9 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.menu_one_frag, container, false);
         ButterKnife.bind(this, view);
+
+        toolbar.inflateMenu(R.menu.menu_main);
+        toolbar.setNavigationIcon(R.mipmap.ic_launcher);
 
         autoViewPager.setAdapter(adapter);
         autoViewPager.setCycle(true);
