@@ -8,10 +8,11 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,8 +29,10 @@ import butterknife.ButterKnife;
  * Description://TODO
  * Created by freddy on 16/6/2.
  */
-public class MenuTwoFragment extends Fragment implements MenuTwoContract.View{
+public class MenuTwoFragment extends Fragment implements MenuTwoContract.View {
 
+    @Bind(R.id.collapse_layout)
+    CollapsingToolbarLayout collapseLayout;
     private MenuTwoContract.Presenter mPresenter;
     private SearchRVAdapter adapter;
 
@@ -62,6 +65,10 @@ public class MenuTwoFragment extends Fragment implements MenuTwoContract.View{
 
         rvSearch.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
         rvSearch.setAdapter(adapter);
+
+        collapseLayout.setTitle(getResources().getString(R.string.app_name));
+        collapseLayout.setExpandedTitleColor(ContextCompat.getColor(getActivity(),android.R.color.holo_green_light));//设置还没有收缩的title字体颜色
+        collapseLayout.setCollapsedTitleTextColor(ContextCompat.getColor(getActivity(),android.R.color.white));//设置收缩之后title字体颜色
         return view;
 
     }
@@ -77,11 +84,11 @@ public class MenuTwoFragment extends Fragment implements MenuTwoContract.View{
         this.mPresenter = presenter;
     }
 
-    public class SearchRVAdapter extends RecyclerView.Adapter<SearchRVViewHolder>{
+    public class SearchRVAdapter extends RecyclerView.Adapter<SearchRVViewHolder> {
 
         private Context context;
 
-        public SearchRVAdapter(Context context){
+        public SearchRVAdapter(Context context) {
             this.context = context;
         }
 
@@ -96,7 +103,7 @@ public class MenuTwoFragment extends Fragment implements MenuTwoContract.View{
             RecyclerView.LayoutParams layoutParams = (RecyclerView.LayoutParams) holder.textView.getLayoutParams();
             int max = 300;
             int min = 150;
-            layoutParams.height = random.nextInt(max) % (max-min+1)+min;
+            layoutParams.height = random.nextInt(max) % (max - min + 1) + min;
             layoutParams.leftMargin = 2;
             layoutParams.rightMargin = 2;
             layoutParams.topMargin = 2;
@@ -111,9 +118,10 @@ public class MenuTwoFragment extends Fragment implements MenuTwoContract.View{
         }
     }
 
-    public static class SearchRVViewHolder extends RecyclerView.ViewHolder{
+    public static class SearchRVViewHolder extends RecyclerView.ViewHolder {
 
         TextView textView;
+
         public SearchRVViewHolder(View itemView) {
             super(itemView);
             textView = (TextView) itemView.findViewById(android.R.id.text1);
