@@ -4,8 +4,12 @@
 
 package com.freddy.rxbaby.func.main;
 
+import android.support.v4.app.Fragment;
+
 import com.freddy.rxbaby.base.BasePrestener;
 import com.freddy.rxbaby.base.BaseView;
+
+import java.util.List;
 
 /**
  * Description://TODO
@@ -29,5 +33,11 @@ public class MainContract {
          * @return text array
          */
         String[] initMenuText();
+
+        /**
+         * init tabLayout fragments
+         * @return fragment list
+         */
+        List<Fragment> initFragments();
     }
 }

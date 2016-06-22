@@ -2,7 +2,7 @@
  * Copyright (c) 2016. freddy <freddywu24@gmail.com>
  */
 
-package com.freddy.rxbaby.func;
+package com.freddy.rxbaby.func.main;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

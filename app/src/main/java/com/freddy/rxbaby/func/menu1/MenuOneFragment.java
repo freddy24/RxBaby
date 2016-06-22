@@ -74,7 +74,6 @@ public class MenuOneFragment extends Fragment implements MenuOneContract.View {
         ButterKnife.bind(this, view);
 
         toolbar.inflateMenu(R.menu.menu_main);
-        toolbar.setNavigationIcon(R.mipmap.ic_launcher);
 
         autoViewPager.setAdapter(adapter);
         autoViewPager.setCycle(true);

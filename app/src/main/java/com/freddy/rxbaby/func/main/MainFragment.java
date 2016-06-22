@@ -19,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.freddy.rxbaby.R;
-import com.freddy.rxbaby.func.MainActivity;
 import com.freddy.rxbaby.func.menu1.MenuOneFragment;
 import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
 
@@ -44,7 +43,7 @@ public class MainFragment extends Fragment implements MainContract.View {
 
     private MainContract.Presenter mPresenter;
 
-    private List<Fragment> fragments;
+    private MainPagerAdapter adapter;
 
     public MainFragment() {
 
@@ -62,12 +61,7 @@ public class MainFragment extends Fragment implements MainContract.View {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        fragments = new ArrayList<>();
-        fragments.add(MenuOneFragment.newInstance());
-        fragments.add(MenuTwoFragment.newInstance());
-        fragments.add(MenuOneFragment.newInstance());
-        fragments.add(MenuTwoFragment.newInstance());
-
+        adapter = new MainPagerAdapter(getActivity().getSupportFragmentManager(),mPresenter.initFragments());
         ((MainActivity)getActivity()).getSupportActionBar();
     }
 
@@ -77,7 +71,6 @@ public class MainFragment extends Fragment implements MainContract.View {
         View view = inflater.inflate(R.layout.main_frag, container, false);
         ButterKnife.bind(this, view);
 
-        MainPagerAdapter adapter = new MainPagerAdapter(getActivity().getSupportFragmentManager(),fragments);
         viewPager.setAdapter(adapter);
         tlTabs.setupWithViewPager(viewPager);
         TabLayout.Tab tab0 = tlTabs.getTabAt(0);
@@ -92,7 +85,6 @@ public class MainFragment extends Fragment implements MainContract.View {
         tab1.setCustomView(getTabView(1));
         tab2.setCustomView(getTabView(2));
         tab3.setCustomView(getTabView(3));
-        tab0.select();
         return view;
     }
 

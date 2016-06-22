@@ -4,7 +4,14 @@
 
 package com.freddy.rxbaby.func.main;
 
+import android.support.v4.app.Fragment;
+
 import com.freddy.rxbaby.R;
+import com.freddy.rxbaby.func.menu1.MenuOneFragment;
+import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Description://TODO
@@ -41,4 +48,16 @@ public class MainPresenter implements MainContract.Presenter{
     public String[] initMenuText() {
         return texts;
     }
+
+    @Override
+    public List<Fragment> initFragments() {
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(MenuOneFragment.newInstance());
+        fragments.add(MenuTwoFragment.newInstance());
+        fragments.add(MenuOneFragment.newInstance());
+        fragments.add(MenuTwoFragment.newInstance());
+        return fragments;
+    }
+
+
 }
