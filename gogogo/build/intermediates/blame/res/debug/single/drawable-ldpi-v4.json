@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_remove.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_remove.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_menu.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_menu.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_add.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_add.png"
+    }
+]

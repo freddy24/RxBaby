@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\menu\\menu_main.xml"
+    }
+]

@@ -5,6 +5,7 @@
 package com.freddy.rxbaby.func.main;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
 
 import com.freddy.babylib.utils.ActivityUtils;
@@ -22,12 +23,8 @@ import butterknife.ButterKnife;
 public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_act);
-        ButterKnife.bind(this);
-
-//        setSupportActionBar(toolbar);
 //        ActionBar actionBar = getSupportActionBar();
 //        if (actionBar != null) {
 //            actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);

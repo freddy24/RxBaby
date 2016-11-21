@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y140"
+    android:orientation="vertical" android:background="@drawable/hnumber_shape"
+    android:padding="3dp">
+
+    <TextView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/x18"
+        android:text="123"
+        android:textColor="@color/bg_color"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@drawable/number_text_selector"
+        android:text="123"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/x45"/>
+
+</RelativeLayout>

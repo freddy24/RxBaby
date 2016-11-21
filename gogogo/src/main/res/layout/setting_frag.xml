@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/x34"
+            android:text="倍数"
+            android:textColor="@color/text_black_2"/>
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/iv_btn_bg"
+            android:src="@drawable/ic_add"/>
+
+        <TextView
+            android:id="@+id/tv_multiple"
+            android:layout_toLeftOf="@+id/ib_add"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@null"
+            android:textSize="@dimen/x34"
+            android:textColor="@color/text_black_1"
+            android:text="40"/>
+
+        <ImageButton
+            android:id="@+id/ib_minus"
+            android:layout_toLeftOf="@+id/tv_multiple"
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iv_btn_bg"
+            android:src="@drawable/ic_remove"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/gray_text_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x32">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/x34"
+            android:text="本期特码"
+            android:textColor="@color/text_black_2"/>
+
+        <EditText
+            android:id="@+id/et_special"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_width="@dimen/x250"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:background="@null"
+            android:textSize="@dimen/x34"
+            android:inputType="number"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/text_black_1"
+            android:hint="请输入本期特码"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/gray_text_color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_marginLeft="@dimen/x32"
+        android:layout_marginRight="@dimen/x32"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@color/white"
+        android:text="开奖"
+        android:textSize="@dimen/x36"
+        android:layout_height="@dimen/y100"/>
+</LinearLayout>

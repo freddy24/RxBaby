@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/home_on"/>
+    <item android:state_pressed="true" android:drawable="@mipmap/home_on"/>
+    <item android:drawable="@mipmap/home_off"/>
+</selector>

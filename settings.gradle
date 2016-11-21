@@ -1,1 +1,1 @@
-include ':app', ':babylib'
+include ':app', ':babylib',":gogogo"

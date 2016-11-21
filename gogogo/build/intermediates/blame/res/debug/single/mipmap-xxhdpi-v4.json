@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\home_on.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\home_on.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\contacts_on.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\contacts_on.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\home_off.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\home_off.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\contacts_off.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\contacts_off.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\contacts_off.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\contacts_off.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\banner_dafault_one.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\banner_dafault_one.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\contacts_on.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\contacts_on.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\banner_default_two.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\banner_default_two.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\banner_default_two.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\banner_default_two.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\btn_back.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\btn_back.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\banner_dafault_one.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\banner_dafault_one.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\home_on.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\mipmap-xxhdpi\\home_on.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\home_off.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\mipmap-xxhdpi\\home_off.png"
+    }
+]

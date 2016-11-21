@@ -25,4 +25,13 @@ public class ActivityUtils {
         fragmentTransaction.add(frameId, fragment);
         fragmentTransaction.commit();
     }
+
+    public static void addFragmentToActivity(@NonNull FragmentManager fragmentManager,
+                                             @NonNull Fragment fragment, int frameId, String Tag){
+        checkNotNull(fragmentManager);
+        checkNotNull(fragment);
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(frameId, fragment, Tag);
+        fragmentTransaction.commit();
+    }
 }

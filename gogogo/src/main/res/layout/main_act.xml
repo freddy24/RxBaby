@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/fl_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/text_black_3"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        app:tabMode="fixed"
+        android:background="@color/bg_color"
+        app:tabTextColor="@android:color/black"
+        app:tabIndicatorHeight="@dimen/y45"
+        android:layout_gravity="center"
+        app:tabSelectedTextColor="@android:color/holo_red_light"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabGravity="fill"/>
+</LinearLayout>

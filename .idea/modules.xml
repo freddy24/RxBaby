@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/RxBaby.iml" filepath="$PROJECT_DIR$/RxBaby.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/babylib/babylib.iml" filepath="$PROJECT_DIR$/babylib/babylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gogogo/gogogo.iml" filepath="$PROJECT_DIR$/gogogo/gogogo.iml" />
     </modules>
   </component>
 </project>
