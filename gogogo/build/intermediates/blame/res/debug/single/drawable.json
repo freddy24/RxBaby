@@ -112,6 +112,10 @@
         "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\drawable\\menu4_selector.xml"
     },
     {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable\\bg_edittext.xml"
+    },
+    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\red_circle_selector.xml",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable\\red_circle_selector.xml"
     },

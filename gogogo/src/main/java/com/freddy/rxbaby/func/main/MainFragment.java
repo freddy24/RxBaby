@@ -35,7 +35,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
  * Created by freddy on 16/6/2.
  */
 public class MainFragment extends Fragment implements MainContract.View {
-    private static final String[] titles = new String[]{"数字","生肖","波路","大小","双单"};
+    private static final String[] titles = new String[]{"数字","生肖","波路","大小双单"};
     @Bind(R.id.view_pager)
     ViewPager viewPager;
     @Bind(R.id.tl_tabs)
@@ -73,7 +73,6 @@ public class MainFragment extends Fragment implements MainContract.View {
         tlTabs.addTab(tlTabs.newTab().setText(titles[1]));
         tlTabs.addTab(tlTabs.newTab().setText(titles[2]));
         tlTabs.addTab(tlTabs.newTab().setText(titles[3]));
-        tlTabs.addTab(tlTabs.newTab().setText(titles[4]));
         viewPager.setAdapter(adapter);
         tlTabs.setupWithViewPager(viewPager);
         return view;

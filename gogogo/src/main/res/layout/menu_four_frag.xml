@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x220"
+                android:gravity="center"
+                android:src="@drawable/big"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:hint="请输入金额"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:layout_marginTop="@dimen/y20"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x220"
+                android:gravity="center"
+                android:src="@drawable/small"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:hint="请输入金额"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:layout_marginTop="@dimen/y20"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="8"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x220"
+                android:gravity="center"
+                android:src="@drawable/double_img"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:hint="请输入金额"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:layout_marginTop="@dimen/y20"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="8"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x220"
+                android:layout_height="@dimen/x220"
+                android:gravity="center"
+                android:src="@drawable/single"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y98"
+                android:hint="请输入金额"
+                android:gravity="center"
+                android:textColor="@color/red"
+                android:textSize="22sp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:layout_marginTop="@dimen/y20"
+                android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

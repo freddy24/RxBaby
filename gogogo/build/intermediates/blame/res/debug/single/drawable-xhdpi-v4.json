@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
-        "source": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
-    },
-    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png",
@@ -58,6 +58,10 @@
     {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\single.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable-xhdpi\\single.png"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
@@ -120,6 +124,10 @@
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\double_img.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable-xhdpi\\double_img.png"
+    },
+    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -142,6 +150,10 @@
     {
         "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
         "source": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\small.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable-xhdpi\\small.png"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",
@@ -278,6 +290,10 @@
     {
         "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png",
         "source": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-xhdpi\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\big.png",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable-xhdpi\\big.png"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png",

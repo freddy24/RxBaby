@@ -19,6 +19,7 @@
         app:tabTextColor="@android:color/white"
         app:tabIndicatorHeight="@dimen/y2"
         android:layout_gravity="center"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Medium"
         app:tabSelectedTextColor="@android:color/holo_orange_light"
         app:tabIndicatorColor="@android:color/white"
         app:tabGravity="fill"/>

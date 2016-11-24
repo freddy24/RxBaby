@@ -11,6 +11,7 @@ import com.freddy.rxbaby.func.menu1.MenuOneFragment;
 import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
 import com.freddy.rxbaby.func.menu3.MenuThreeContract;
 import com.freddy.rxbaby.func.menu3.MenuThreeFragment;
+import com.freddy.rxbaby.func.menu4.MenuFourFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,8 +58,7 @@ public class MainPresenter implements MainContract.Presenter{
         fragments.add(MenuOneFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
         fragments.add(MenuThreeFragment.newInstance());
-        fragments.add(MenuTwoFragment.newInstance());
-        fragments.add(MenuTwoFragment.newInstance());
+        fragments.add(MenuFourFragment.newInstance());
         return fragments;
     }
 
