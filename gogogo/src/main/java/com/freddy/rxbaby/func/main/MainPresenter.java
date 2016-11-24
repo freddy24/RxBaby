@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import com.freddy.rxbaby.R;
 import com.freddy.rxbaby.func.menu1.MenuOneFragment;
 import com.freddy.rxbaby.func.menu2.MenuTwoFragment;
+import com.freddy.rxbaby.func.menu3.MenuThreeContract;
+import com.freddy.rxbaby.func.menu3.MenuThreeFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +56,7 @@ public class MainPresenter implements MainContract.Presenter{
         List<Fragment> fragments = new ArrayList<>();
         fragments.add(MenuOneFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
-        fragments.add(MenuOneFragment.newInstance());
+        fragments.add(MenuThreeFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
         fragments.add(MenuTwoFragment.newInstance());
         return fragments;

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2016. freddy <freddywu24@gmail.com>
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tv_red"
+            android:layout_marginTop="@dimen/y40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_circle_selector"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x50"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/tv_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_circle_selector"
+            android:gravity="center"
+            android:text="0.0"
+            android:layout_marginTop="@dimen/y40"
+            android:textColor="@color/white"
+            android:textSize="22dp"/>
+
+        <TextView
+            android:id="@+id/tv_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_circle_selector"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/y40"
+            android:text="0.0"
+            android:textColor="@color/white"
+            android:textSize="22dp"/>
+
+</LinearLayout>

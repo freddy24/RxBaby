@@ -24,6 +24,10 @@
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\RxBaby\\babylib\\unspecified\\res\\drawable\\btn_dialog_bg.xml"
     },
     {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\blue_circle_selector.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable\\blue_circle_selector.xml"
+    },
+    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
@@ -44,12 +48,12 @@
         "source": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\menu1_selector.xml",
@@ -108,6 +112,10 @@
         "source": "D:\\gitProject\\RxBaby\\app\\src\\main\\res\\drawable\\menu4_selector.xml"
     },
     {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\red_circle_selector.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable\\red_circle_selector.xml"
+    },
+    {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
@@ -162,6 +170,10 @@
     {
         "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\gitProject\\RxBaby\\gogogo\\build\\intermediates\\res\\merged\\debug\\drawable\\green_circle_selector.xml",
+        "source": "D:\\gitProject\\RxBaby\\gogogo\\src\\main\\res\\drawable\\green_circle_selector.xml"
     },
     {
         "merged": "D:\\gitProject\\RxBaby\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
