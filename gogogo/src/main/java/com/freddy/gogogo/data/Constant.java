@@ -24,6 +24,29 @@ import java.util.List;
  */
 public class Constant {
 
+    public static final String Rat = "鼠";
+    public static final String Ox = "牛";
+    public static final String Tiger = "虎";
+    public static final String Rabbit = "兔";
+    public static final String Dragon = "龙";
+    public static final String Snake = "蛇";
+    public static final String Horse = "马";
+    public static final String Goat = "羊";
+    public static final String Monkey = "猴";
+    public static final String Rooster = "鸡";
+    public static final String DOG = "狗";
+    public static final String Pig = "猪";
+
+    public static final String DOUBLE = "boudle";
+    public static final String SINGLE = "single";
+
+    public static final String BIG = "big";
+    public static final String SMALL = "small";
+
+    public static final String WAVE_RED = "red";
+    public static final String WAVE_BLUE = "blue";
+    public static final String WAVE_GREEN = "green";
+
     public static List<HNumber> hNumbers = new ArrayList<HNumber>(){
         {
             add(new HNumber("1"));
